@@ -2,12 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69c928d8-f206-4b78-9ff7-8594c5e6c7d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/learnreactivespriing/learnreactivespring/fluxandmonoplayground/ColdAndHotPublisherTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/learnreactivespriing/learnreactivespring/fluxandmonoplayground/FluxAndMonoBackPressureTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/learnreactivespriing/learnreactivespring/fluxandmonoplayground/FluxAndMonoErrorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/learnreactivespriing/learnreactivespring/fluxandmonoplayground/FluxAndMonoWithTimeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/learnreactivespriing/learnreactivespring/fluxandmonoplayground/VirtualTimeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnreactivespriing/learnreactivespring/controller/FluxAndMonoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/learnreactivespriing/learnreactivespring/controller/FluxAndMonoControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_bson_3_11_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_3_11_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_async_3_11_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_core_3_11_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_reactivestreams_1_12_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_mongodb_reactive_2_2_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_2_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_mongodb_2_2_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_2_2_RELEASE.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-reactivespring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/learn-reactivespring.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +49,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -48,84 +60,84 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
-  <component name="RunManager" selected="JUnit.VirtualTimeTest.testingWithVirtualTime">
-    <configuration name="ColdAndHotPublisherTest.coldPublisherTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.FluxAndMonoControllerTest.fluxStream">
+    <configuration name="FluxAndMonoControllerTest.fluxStream" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learn-reactivespring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.learnreactivespriing.learnreactivespring.fluxandmonoplayground.*" />
+          <option name="PATTERN" value="com.learnreactivespriing.learnreactivespring.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.learnreactivespriing.learnreactivespring.fluxandmonoplayground" />
-      <option name="MAIN_CLASS_NAME" value="com.learnreactivespriing.learnreactivespring.fluxandmonoplayground.ColdAndHotPublisherTest" />
-      <option name="METHOD_NAME" value="coldPublisherTest" />
+      <option name="PACKAGE_NAME" value="com.learnreactivespriing.learnreactivespring.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.learnreactivespriing.learnreactivespring.controller.FluxAndMonoControllerTest" />
+      <option name="METHOD_NAME" value="fluxStream" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ColdAndHotPublisherTest.hotdPublisherTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FluxAndMonoControllerTest.flux_approach1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learn-reactivespring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.learnreactivespriing.learnreactivespring.fluxandmonoplayground.*" />
+          <option name="PATTERN" value="com.learnreactivespriing.learnreactivespring.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.learnreactivespriing.learnreactivespring.fluxandmonoplayground" />
-      <option name="MAIN_CLASS_NAME" value="com.learnreactivespriing.learnreactivespring.fluxandmonoplayground.ColdAndHotPublisherTest" />
-      <option name="METHOD_NAME" value="hotdPublisherTest" />
+      <option name="PACKAGE_NAME" value="com.learnreactivespriing.learnreactivespring.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.learnreactivespriing.learnreactivespring.controller.FluxAndMonoControllerTest" />
+      <option name="METHOD_NAME" value="flux_approach1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FluxAndMonoBackPressureTest.customized_backPressure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FluxAndMonoControllerTest.flux_approach2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learn-reactivespring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.learnreactivespriing.learnreactivespring.fluxandmonoplayground.*" />
+          <option name="PATTERN" value="com.learnreactivespriing.learnreactivespring.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.learnreactivespriing.learnreactivespring.fluxandmonoplayground" />
-      <option name="MAIN_CLASS_NAME" value="com.learnreactivespriing.learnreactivespring.fluxandmonoplayground.FluxAndMonoBackPressureTest" />
-      <option name="METHOD_NAME" value="customized_backPressure" />
+      <option name="PACKAGE_NAME" value="com.learnreactivespriing.learnreactivespring.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.learnreactivespriing.learnreactivespring.controller.FluxAndMonoControllerTest" />
+      <option name="METHOD_NAME" value="flux_approach2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VirtualTimeTest.testingWithVirtualTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FluxAndMonoControllerTest.flux_approach3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learn-reactivespring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.learnreactivespriing.learnreactivespring.fluxandmonoplayground.*" />
+          <option name="PATTERN" value="com.learnreactivespriing.learnreactivespring.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.learnreactivespriing.learnreactivespring.fluxandmonoplayground" />
-      <option name="MAIN_CLASS_NAME" value="com.learnreactivespriing.learnreactivespring.fluxandmonoplayground.VirtualTimeTest" />
-      <option name="METHOD_NAME" value="testingWithVirtualTime" />
+      <option name="PACKAGE_NAME" value="com.learnreactivespriing.learnreactivespring.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.learnreactivespriing.learnreactivespring.controller.FluxAndMonoControllerTest" />
+      <option name="METHOD_NAME" value="flux_approach3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VirtualTimeTest.testingWithoutVirtualTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FluxAndMonoControllerTest.flux_approach4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learn-reactivespring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.learnreactivespriing.learnreactivespring.fluxandmonoplayground.*" />
+          <option name="PATTERN" value="com.learnreactivespriing.learnreactivespring.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.learnreactivespriing.learnreactivespring.fluxandmonoplayground" />
-      <option name="MAIN_CLASS_NAME" value="com.learnreactivespriing.learnreactivespring.fluxandmonoplayground.VirtualTimeTest" />
-      <option name="METHOD_NAME" value="testingWithoutVirtualTime" />
+      <option name="PACKAGE_NAME" value="com.learnreactivespriing.learnreactivespring.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.learnreactivespriing.learnreactivespring.controller.FluxAndMonoControllerTest" />
+      <option name="METHOD_NAME" value="flux_approach4" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -140,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.VirtualTimeTest.testingWithVirtualTime" />
-        <item itemvalue="JUnit.VirtualTimeTest.testingWithoutVirtualTime" />
-        <item itemvalue="JUnit.ColdAndHotPublisherTest.hotdPublisherTest" />
-        <item itemvalue="JUnit.ColdAndHotPublisherTest.coldPublisherTest" />
-        <item itemvalue="JUnit.FluxAndMonoBackPressureTest.customized_backPressure" />
+        <item itemvalue="JUnit.FluxAndMonoControllerTest.fluxStream" />
+        <item itemvalue="JUnit.FluxAndMonoControllerTest.flux_approach4" />
+        <item itemvalue="JUnit.FluxAndMonoControllerTest.flux_approach3" />
+        <item itemvalue="JUnit.FluxAndMonoControllerTest.flux_approach2" />
+        <item itemvalue="JUnit.FluxAndMonoControllerTest.flux_approach1" />
       </list>
     </recent_temporary>
   </component>
@@ -176,63 +188,89 @@
       <workItem from="1579206403184" duration="4225000" />
       <workItem from="1579281188332" duration="6025000" />
       <workItem from="1579319739916" duration="108000" />
-      <workItem from="1579374768669" duration="8239000" />
+      <workItem from="1579374768669" duration="8385000" />
+      <workItem from="1579461372219" duration="8113000" />
     </task>
+    <task id="LOCAL-00001" summary="Section 7 Reactive programming">
+      <created>1579389192329</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1579389192329</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Section 7 Reactive programming" />
+    <option name="LAST_COMMIT_MESSAGE" value="Section 7 Reactive programming" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2089" y="539" key="#com.intellij.ide.util.MemberChooser" timestamp="1579383833225">
       <screen x="0" y="0" width="3440" height="1560" />
     </state>
     <state x="2089" y="539" key="#com.intellij.ide.util.MemberChooser/0.0.3440.1560@0.0.3440.1560" timestamp="1579383833225" />
-    <state width="1592" height="345" key="GridCell.Tab.0.bottom" timestamp="1579389067162">
+    <state x="1931" y="424" key="CommitChangelistDialog2" timestamp="1579389191854">
+      <screen x="0" y="0" width="3440" height="1560" />
+    </state>
+    <state x="1931" y="424" key="CommitChangelistDialog2/0.0.3440.1560@0.0.3440.1560" timestamp="1579389191854" />
+    <state width="1376" height="362" key="GridCell.Tab.0.bottom" timestamp="1579474688338">
       <screen x="0" y="0" width="3440" height="1560" />
     </state>
     <state width="1679" height="260" key="GridCell.Tab.0.bottom/0.0.3440.1400@0.0.3440.1400" timestamp="1579302759873" />
-    <state width="1592" height="345" key="GridCell.Tab.0.bottom/0.0.3440.1560@0.0.3440.1560" timestamp="1579389067162" />
-    <state width="1809" height="345" key="GridCell.Tab.0.bottom/0.0.3840.1560@0.0.3840.1560" timestamp="1579382908677" />
-    <state width="1592" height="345" key="GridCell.Tab.0.center" timestamp="1579389067161">
+    <state width="1376" height="362" key="GridCell.Tab.0.bottom/0.0.3440.1560@0.0.3440.1560" timestamp="1579474688338" />
+    <state width="1592" height="345" key="GridCell.Tab.0.bottom/0.0.3840.1560@0.0.3840.1560" timestamp="1579462292323" />
+    <state width="1376" height="362" key="GridCell.Tab.0.center" timestamp="1579474688338">
       <screen x="0" y="0" width="3440" height="1560" />
     </state>
     <state width="1679" height="260" key="GridCell.Tab.0.center/0.0.3440.1400@0.0.3440.1400" timestamp="1579302759873" />
-    <state width="1592" height="345" key="GridCell.Tab.0.center/0.0.3440.1560@0.0.3440.1560" timestamp="1579389067161" />
-    <state width="1809" height="345" key="GridCell.Tab.0.center/0.0.3840.1560@0.0.3840.1560" timestamp="1579382908677" />
-    <state width="1592" height="345" key="GridCell.Tab.0.left" timestamp="1579389067161">
+    <state width="1376" height="362" key="GridCell.Tab.0.center/0.0.3440.1560@0.0.3440.1560" timestamp="1579474688338" />
+    <state width="1592" height="345" key="GridCell.Tab.0.center/0.0.3840.1560@0.0.3840.1560" timestamp="1579462292323" />
+    <state width="1376" height="362" key="GridCell.Tab.0.left" timestamp="1579474688338">
       <screen x="0" y="0" width="3440" height="1560" />
     </state>
     <state width="1679" height="260" key="GridCell.Tab.0.left/0.0.3440.1400@0.0.3440.1400" timestamp="1579302759873" />
-    <state width="1592" height="345" key="GridCell.Tab.0.left/0.0.3440.1560@0.0.3440.1560" timestamp="1579389067161" />
-    <state width="1809" height="345" key="GridCell.Tab.0.left/0.0.3840.1560@0.0.3840.1560" timestamp="1579382908677" />
-    <state width="1592" height="345" key="GridCell.Tab.0.right" timestamp="1579389067161">
+    <state width="1376" height="362" key="GridCell.Tab.0.left/0.0.3440.1560@0.0.3440.1560" timestamp="1579474688338" />
+    <state width="1592" height="345" key="GridCell.Tab.0.left/0.0.3840.1560@0.0.3840.1560" timestamp="1579462292323" />
+    <state width="1376" height="362" key="GridCell.Tab.0.right" timestamp="1579474688338">
       <screen x="0" y="0" width="3440" height="1560" />
     </state>
     <state width="1679" height="260" key="GridCell.Tab.0.right/0.0.3440.1400@0.0.3440.1400" timestamp="1579302759873" />
-    <state width="1592" height="345" key="GridCell.Tab.0.right/0.0.3440.1560@0.0.3440.1560" timestamp="1579389067161" />
-    <state width="1809" height="345" key="GridCell.Tab.0.right/0.0.3840.1560@0.0.3840.1560" timestamp="1579382908677" />
-    <state width="1450" height="397" key="GridCell.Tab.1.bottom" timestamp="1579217063318">
-      <screen x="0" y="0" width="3440" height="1400" />
+    <state width="1376" height="362" key="GridCell.Tab.0.right/0.0.3440.1560@0.0.3440.1560" timestamp="1579474688338" />
+    <state width="1592" height="345" key="GridCell.Tab.0.right/0.0.3840.1560@0.0.3840.1560" timestamp="1579462292323" />
+    <state width="1376" height="180" key="GridCell.Tab.1.bottom" timestamp="1579474450193">
+      <screen x="0" y="0" width="3440" height="1560" />
     </state>
     <state width="1450" height="397" key="GridCell.Tab.1.bottom/0.0.3440.1400@0.0.3440.1400" timestamp="1579217063318" />
-    <state width="1450" height="397" key="GridCell.Tab.1.center" timestamp="1579217063318">
-      <screen x="0" y="0" width="3440" height="1400" />
+    <state width="1376" height="180" key="GridCell.Tab.1.bottom/0.0.3440.1560@0.0.3440.1560" timestamp="1579474450193" />
+    <state width="1376" height="180" key="GridCell.Tab.1.center" timestamp="1579474450193">
+      <screen x="0" y="0" width="3440" height="1560" />
     </state>
     <state width="1450" height="397" key="GridCell.Tab.1.center/0.0.3440.1400@0.0.3440.1400" timestamp="1579217063318" />
-    <state width="1450" height="397" key="GridCell.Tab.1.left" timestamp="1579217063318">
-      <screen x="0" y="0" width="3440" height="1400" />
+    <state width="1376" height="180" key="GridCell.Tab.1.center/0.0.3440.1560@0.0.3440.1560" timestamp="1579474450193" />
+    <state width="1376" height="180" key="GridCell.Tab.1.left" timestamp="1579474450193">
+      <screen x="0" y="0" width="3440" height="1560" />
     </state>
     <state width="1450" height="397" key="GridCell.Tab.1.left/0.0.3440.1400@0.0.3440.1400" timestamp="1579217063318" />
-    <state width="1450" height="397" key="GridCell.Tab.1.right" timestamp="1579217063318">
-      <screen x="0" y="0" width="3440" height="1400" />
+    <state width="1376" height="180" key="GridCell.Tab.1.left/0.0.3440.1560@0.0.3440.1560" timestamp="1579474450193" />
+    <state width="1376" height="180" key="GridCell.Tab.1.right" timestamp="1579474450193">
+      <screen x="0" y="0" width="3440" height="1560" />
     </state>
     <state width="1450" height="397" key="GridCell.Tab.1.right/0.0.3440.1400@0.0.3440.1400" timestamp="1579217063318" />
-    <state x="2499" y="497" key="SettingsEditor" timestamp="1579380569394">
-      <screen x="0" y="0" width="3840" height="1560" />
+    <state width="1376" height="180" key="GridCell.Tab.1.right/0.0.3440.1560@0.0.3440.1560" timestamp="1579474450193" />
+    <state x="2239" y="497" key="SettingsEditor" timestamp="1579472142309">
+      <screen x="0" y="0" width="3440" height="1560" />
     </state>
     <state x="2239" y="446" key="SettingsEditor/0.0.3440.1400@0.0.3440.1400" timestamp="1579037007749" />
+    <state x="2239" y="497" key="SettingsEditor/0.0.3440.1560@0.0.3440.1560" timestamp="1579472142309" />
     <state x="2499" y="497" key="SettingsEditor/0.0.3840.1560@0.0.3840.1560" timestamp="1579380569394" />
+    <state x="1970" y="563" key="Vcs.Push.Dialog.v2" timestamp="1579389193796">
+      <screen x="0" y="0" width="3440" height="1560" />
+    </state>
+    <state x="1970" y="563" key="Vcs.Push.Dialog.v2/0.0.3440.1560@0.0.3440.1560" timestamp="1579389193796" />
     <state x="2041" y="482" width="672" height="678" key="search.everywhere.popup" timestamp="1579388904485">
       <screen x="0" y="0" width="3440" height="1560" />
     </state>
