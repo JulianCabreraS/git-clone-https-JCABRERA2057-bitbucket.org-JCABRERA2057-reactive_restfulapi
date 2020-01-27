@@ -20,12 +20,12 @@ public class ItemController {
     ItemReactiveRepository itemReactiveRepository;
 
     @GetMapping(ITEM_END_POINT_V1)
-    public Flux<Item> getAllItems(){
+    public Flux<Item> getAllItems() {
         return itemReactiveRepository.findAll();
     }
 
     @GetMapping(ITEM_END_POINT_V1 + "/{id}")
-    public Mono<ResponseEntity<Item>> getOnteItem(@PathVariable String id){
+    public Mono<ResponseEntity<Item>> getOnteItem(@PathVariable String id) {
         return itemReactiveRepository.findById(id)
                 .map((item) -> new ResponseEntity<>(item, HttpStatus.OK))
                 .defaultIfEmpty(new ResponseEntity<>(HttpStatus.NOT_FOUND));
@@ -33,7 +33,28 @@ public class ItemController {
 
     @PostMapping(ITEM_END_POINT_V1)
     @ResponseStatus(HttpStatus.CREATED)
-    public Mono<Item> createItem(@RequestBody Item item){
+    public Mono<Item> createItem(@RequestBody Item item) {
         return itemReactiveRepository.save(item);
-            }
+    }
+
+    @DeleteMapping(ITEM_END_POINT_V1 + "/{id}")
+    public Mono<Void> deleteItem(@PathVariable String id) {
+        return itemReactiveRepository.deleteById(id);
+    }
+
+    //Id and item to be update in the req
+    @PutMapping(ITEM_END_POINT_V1 + "/{id}")
+    public Mono<ResponseEntity<Item>> UpdateItem(@PathVariable String id, @RequestBody Item item) {
+        return itemReactiveRepository.findById(id)
+                .flatMap(currentItem -> {
+
+                    currentItem.setPrice(item.getPrice());
+                    currentItem.setDescription(item.getDescription());
+                    return itemReactiveRepository.save(currentItem);
+                })
+                .map(updateItem -> new ResponseEntity<>(updateItem, HttpStatus.OK))
+                .defaultIfEmpty(new ResponseEntity<>(HttpStatus.NOT_FOUND));
+    }
+
+
 }

@@ -20,6 +20,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import reactor.test.StepVerifier;
 
+import javax.print.attribute.standard.Media;
 import java.util.Arrays;
 import java.util.List;
 
@@ -116,13 +117,44 @@ public class ItemControllerTest {
                 .expectBody() //Get the body
                 .jsonPath("$.id").isNotEmpty() //Look for specific vlaue
                 .jsonPath("$.description").isEqualTo("Iphone X");
-
-
-
-
-
-
     }
+    @Test
+    public void DeleteItem(){
+        webTestClient.delete().uri(ITEM_END_POINT_V1.concat("/{id}"),"ABC")
+                .accept(MediaType.APPLICATION_JSON)
+                .exchange()
+                .expectStatus().isOk()
+                .expectBody(Void.class);
+    }
+
+    @Test
+    public void updateItem(){
+        double newPrice = 129.99;
+        Item item = new Item(null, "Beats headphones", newPrice);
+        webTestClient.put().uri(ITEM_END_POINT_V1.concat("/{id}"),"ABC")
+                .contentType(MediaType.APPLICATION_JSON)
+                .accept(MediaType.APPLICATION_JSON)
+                .body(Mono.just(item), Item.class)
+                .exchange()
+                .expectStatus().isOk()
+                .expectBody() //Get the body
+                .jsonPath("$.price", newPrice);
+    }
+
+    @Test
+    public void updateItem_notFound(){
+        double newPrice = 129.99;
+        Item item = new Item(null, "Beats headphones", newPrice);
+        webTestClient.put().uri(ITEM_END_POINT_V1.concat("/{id}"),"DEF")
+                .contentType(MediaType.APPLICATION_JSON)
+                .accept(MediaType.APPLICATION_JSON)
+                .body(Mono.just(item), Item.class)
+                .exchange()
+                .expectStatus().isNotFound();
+    }
+
+
+
 
 
 
