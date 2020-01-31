@@ -60,4 +60,13 @@ public class ItemHandlerTest {
                 .expectBodyList(Item.class)
                 .hasSize(4);
     }
+
+    @Test
+    public void getOneItem(){
+        webTestClient.get().uri(ITEM_FUNCTIONAL_END_POINT_V1.concat("/{id}"),"ABC")
+                .exchange()
+                .expectStatus().isOk() // Status is OK
+                .expectBody() // return the body
+                .jsonPath("$.price", 149.99); //check for specific vlaue
+    }
 }
