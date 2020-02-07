@@ -42,6 +42,14 @@ public class ItemController {
         return itemReactiveRepository.deleteById(id);
     }
 
+    @GetMapping(ITEM_END_POINT_V1+"/runtimeException")
+    public Flux<Item> runtimeException(){
+        return itemReactiveRepository.findAll()
+                .concatWith(Mono.error(new RuntimeException("RuntimeException ocurred")));
+
+    }
+
+
     //Id and item to be update in the req
     @PutMapping(ITEM_END_POINT_V1 + "/{id}")
     public Mono<ResponseEntity<Item>> UpdateItem(@PathVariable String id, @RequestBody Item item) {
