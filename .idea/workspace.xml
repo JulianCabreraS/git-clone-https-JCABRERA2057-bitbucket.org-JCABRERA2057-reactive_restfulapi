@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69c928d8-f206-4b78-9ff7-8594c5e6c7d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnreactivespring/exception/FunctionalErrorWebExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnreactivespring/document/ItemCapped.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learnreactivespring/repository/ItemReactiveCappedRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/learnreactivespring/handler/ItemsHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/learnreactivespring/handler/ItemsHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/learnreactivespring/router/ItemsRouter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/learnreactivespring/router/ItemsRouter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/learnreactivespring/handler/ItemHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/learnreactivespring/handler/ItemHandlerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/learnreactivespring/initialize/itemDataInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/learnreactivespring/initialize/itemDataInitializer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +67,11 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.learnreactivespring.repository" />
+    </key>
   </component>
   <component name="RunManager" selected="JUnit.ItemControllerTest.runTimeException">
     <configuration name="FluxAndMonoControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -202,7 +206,7 @@
       <workItem from="1580095294493" duration="89000" />
       <workItem from="1580511732360" duration="4401000" />
       <workItem from="1581047885832" duration="1709000" />
-      <workItem from="1581122432860" duration="4150000" />
+      <workItem from="1581122432860" duration="5768000" />
     </task>
     <task id="LOCAL-00001" summary="Section 7 Reactive programming">
       <created>1579389192329</created>
@@ -239,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581049586322</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Section 18. Building Non Blocking using WebCLient - Exception handling">
+      <created>1581127979092</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1581127979092</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,7 +264,8 @@
     <MESSAGE value="Section 13 Build the Item Reactive API EndPoint Using RestController" />
     <MESSAGE value="Section 14 Build the Item Reactive API EndPoint - Using Functional Web" />
     <MESSAGE value="Section 16. Handling Exception in Webflux - RestController - Hands On" />
-    <option name="LAST_COMMIT_MESSAGE" value="Section 16. Handling Exception in Webflux - RestController - Hands On" />
+    <MESSAGE value="Section 18. Building Non Blocking using WebCLient - Exception handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Section 18. Building Non Blocking using WebCLient - Exception handling" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2089" y="539" key="#com.intellij.ide.util.MemberChooser" timestamp="1581124025829">
@@ -265,11 +277,11 @@
       <screen x="0" y="0" width="3440" height="1560" />
     </state>
     <state x="730" y="520" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.3440.1560@0.0.3440.1560" timestamp="1580095363850" />
-    <state x="1931" y="424" key="CommitChangelistDialog2" timestamp="1581049585887">
+    <state x="1931" y="424" key="CommitChangelistDialog2" timestamp="1581127978616">
       <screen x="0" y="0" width="3440" height="1560" />
     </state>
     <state x="1931" y="381" key="CommitChangelistDialog2/0.0.3440.1400@0.0.3440.1400" timestamp="1580162938871" />
-    <state x="1931" y="424" key="CommitChangelistDialog2/0.0.3440.1560@0.0.3440.1560" timestamp="1581049585887" />
+    <state x="1931" y="424" key="CommitChangelistDialog2/0.0.3440.1560@0.0.3440.1560" timestamp="1581127978616" />
     <state width="1386" height="221" key="GridCell.Tab.0.bottom" timestamp="1581049595613">
       <screen x="0" y="0" width="3440" height="1560" />
     </state>
@@ -328,11 +340,11 @@
     <state x="2239" y="446" key="SettingsEditor/0.0.3440.1400@0.0.3440.1400" timestamp="1579646557254" />
     <state x="2239" y="497" key="SettingsEditor/0.0.3440.1560@0.0.3440.1560" timestamp="1580095381994" />
     <state x="2499" y="497" key="SettingsEditor/0.0.3840.1560@0.0.3840.1560" timestamp="1580513537956" />
-    <state x="1970" y="563" key="Vcs.Push.Dialog.v2" timestamp="1581049588707">
+    <state x="1970" y="563" key="Vcs.Push.Dialog.v2" timestamp="1581127980589">
       <screen x="0" y="0" width="3440" height="1560" />
     </state>
     <state x="1970" y="505" key="Vcs.Push.Dialog.v2/0.0.3440.1400@0.0.3440.1400" timestamp="1580162943888" />
-    <state x="1970" y="563" key="Vcs.Push.Dialog.v2/0.0.3440.1560@0.0.3440.1560" timestamp="1581049588707" />
+    <state x="1970" y="563" key="Vcs.Push.Dialog.v2/0.0.3440.1560@0.0.3440.1560" timestamp="1581127980589" />
     <state x="2212" y="761" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580515037454">
       <screen x="0" y="0" width="3440" height="1560" />
     </state>
