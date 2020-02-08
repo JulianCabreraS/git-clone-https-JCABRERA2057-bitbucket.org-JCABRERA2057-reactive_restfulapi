@@ -30,4 +30,12 @@ public class ItemsRouter {
                 ,itemsHandler::updateItem);
     }
 
+    @Bean
+    public RouterFunction<ServerResponse> errorRoute(ItemsHandler itemsHandler){
+        return RouterFunctions
+                .route(GET("/fun/runtimeexception").and(accept(MediaType.APPLICATION_JSON))
+                ,itemsHandler::itemsEx);
+
+    }
+
 }

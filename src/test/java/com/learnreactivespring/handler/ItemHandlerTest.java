@@ -69,4 +69,14 @@ public class ItemHandlerTest {
                 .expectBody() // return the body
                 .jsonPath("$.price", 149.99); //check for specific vlaue
     }
+
+    @Test
+    public void runTimeException(){
+        webTestClient.get().uri("/fun/runtimeexception")
+                .exchange()
+                .expectStatus().is5xxServerError()
+                .expectBody()
+                .jsonPath("$.message", "RuntimeException Occurred");
+    }
+
 }
